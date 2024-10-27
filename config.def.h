@@ -45,7 +45,7 @@ static const Layout layouts[] = {
 };
 
 /* key definitions */
-#define MODKEY Mod1Mask
+#define MODKEY Mod4Mask
 #define TAGKEYS(KEY,TAG) \
 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
@@ -62,7 +62,9 @@ static const char *termcmd[]  = { "st", NULL };
 
 /* commands spawned when clicking statusbar, the mouse button pressed is exported as BUTTON */
 static const StatusCmd statuscmds[] = {
-	{ "notify-send Mouse$BUTTON", 1 },
+	{ "notify-send 1$BUTTON", 1 },
+	{ "notify-send 2$BUTTON", 2 },
+	{ "notify-send 3$BUTTON", 3 },
 };
 static const char *statuscmd[] = { "/bin/sh", "-c", NULL, NULL };
 
