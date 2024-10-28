@@ -45,12 +45,17 @@ build_dwm_status() {
 }
 
 build_dwm_test(){
-    printf '^B5^^C15^Volume ^B2^^C3^ CPU ^B7^^C15^ Battery'
+    printf '^c#eeeeee^^b#680000^\x01Something | ^c#eeeeee^^b#7c2b00^\x02More Stuff | ^c#eeeeee^^b#695700^\x09Date: 2024-01-01'
 }
 
-while true; do
-    xsetroot -name "$(build_dwm_status)"
-    # xsetroot -name "$(build_dwm_test)"
-    # echo "$(build_dwm_status)"
-    sleep 10s
-done &
+xsetroot -name "$(build_dwm_status)"
+# xsetroot -name "$(build_dwm_test)"
+
+
+
+# while true; do
+#     xsetroot -name "$(build_dwm_status)"
+#     # xsetroot -name "$(build_dwm_test)"
+#     # echo "$(build_dwm_status)"
+#     sleep 10s
+# done &
