@@ -45,7 +45,7 @@ build_dwm_status() {
 }
 
 build_dwm_test(){
-    printf '^c#eeeeee^^b#680000^\x01Something | ^c#eeeeee^^b#7c2b00^\x02More Stuff | ^c#eeeeee^^b#695700^\x0rDate: 2024-01-01'
+    printf '^c#eeeeee^^b#680000^\x01Something | ^c#eeeeee^^b#7c2b00^\x02More Stuff | ^c#eeeeee^^b#695700^\x03Date: 2024-01-01'
 }
 
 # xsetroot -name "$(build_dwm_status)"
