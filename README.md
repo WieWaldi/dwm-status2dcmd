@@ -12,5 +12,3 @@ The following patches have been applied.
 
 ## Scripts
   - dwm-status to set status using "xsetroor -name"
-  - dwm-satuscmd which gets called by clicking the status bar
-
