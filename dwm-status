@@ -41,15 +41,15 @@ prompt_segment() {
 build_dwm_status() {
     prompt_segment ${tbo_color0} ${tbo_color15} "\x01Something"
     prompt_segment ${tbo_color1} ${tbo_color15} "\x02More Stuff"
-    prompt_segment ${tbo_color2} ${tbo_color15} "\x09$(date "+%A %d.%m.%Y")"
+    prompt_segment ${tbo_color2} ${tbo_color15} "\x03$(date "+%A %d.%m.%Y")"
 }
 
 build_dwm_test(){
-    printf '^c#eeeeee^^b#680000^\x01Something | ^c#eeeeee^^b#7c2b00^\x02More Stuff | ^c#eeeeee^^b#695700^\x09Date: 2024-01-01'
+    printf '^c#eeeeee^^b#680000^\x01Something | ^c#eeeeee^^b#7c2b00^\x02More Stuff | ^c#eeeeee^^b#695700^\x0rDate: 2024-01-01'
 }
 
-xsetroot -name "$(build_dwm_status)"
-# xsetroot -name "$(build_dwm_test)"
+# xsetroot -name "$(build_dwm_status)"
+xsetroot -name "$(build_dwm_test)"
 
 
 

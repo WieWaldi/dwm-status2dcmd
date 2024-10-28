@@ -62,15 +62,9 @@ static const char *termcmd[]  = { "st", NULL };
 
 /* commands spawned when clicking statusbar, the mouse button pressed is exported as BUTTON */
 static const StatusCmd statuscmds[]     = { 
-                                            { "dwm-statuscmd 1 $BUTTON", 1 },
-                                            { "dwm-statuscmd 2 $BUTTON", 2 },
-                                            { "dwm-statuscmd 3 $BUTTON", 3 },
-                                            { "dwm-statuscmd 4 $BUTTON", 4 },
-                                            { "dwm-statuscmd 5 $BUTTON", 5 },
-                                            { "dwm-statuscmd 6 $BUTTON", 6 },
-                                            { "dwm-statuscmd 7 $BUTTON", 7 },
-                                            { "dwm-statuscmd 8 $BUTTON", 8 },
-                                            { "dwm-statuscmd 9 $BUTTON", 9 },
+                                            { "notify-send Pos:1-Button:$BUTTON", 1 },
+                                            { "notify-send Pos:2-Button:$BUTTON", 2 },
+                                            { "notify-send Pos:3-Button:$BUTTON", 3 },
 };
 static const char *statuscmd[] = { "/bin/sh", "-c", NULL, NULL };
 
