@@ -4,7 +4,6 @@ Temporary repository to fiddle arround. I doubt that the following patches
 are compatible and working straight out of the box.
 
 ! dwm gets installed into '~/.local/bin'.
-! 'make clean' will delete config.h as well.
 
 ## Patches
 The following patches have been applied.
