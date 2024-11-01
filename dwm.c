@@ -467,6 +467,15 @@ buttonpress(XEvent *e)
 					if (x >= ev->x)
 						break;
 					statuscmdn = ch;
+				} else if (*s == '^') {
+					*s = '\0';
+					x += TEXTW(text) - lrpad;
+					*s = '^';
+					if (*(++s) == 'f')
+						x += atoi(++s);
+					while (*(s++) != '^');
+					text = s;
+					s--;
 				}
 			}
 		}
